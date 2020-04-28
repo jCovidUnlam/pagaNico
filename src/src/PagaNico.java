@@ -2,9 +2,8 @@ package src;
 
 public class PagaNico {
 	
-	public static int pagaNico(int p) {
+	int pagaNico(int p) {
 		return (p%=500) < 201 ? p : p > 360 ? p-120 : p-p/3;
-		//return p = (p%=500) < 201 ? p : p > 360 ? p-120 : p-p/3;
 	}
 	
 //	public static int pagaNico(int p) {
