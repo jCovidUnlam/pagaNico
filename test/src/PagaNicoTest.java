@@ -49,5 +49,17 @@ public class PagaNicoTest {
 	public void paganNicoYJoa2() {
 		Assert.assertEquals(200, PagaNico.pagaNico(700));
 	}
+	
+	@Test
+	public void paganNicoYJoa3() {
+		Assert.assertEquals(167, PagaNico.pagaNico(750));
+	}
+	
+	@Test
+	public void paganNicoYJoa4() {
+		Assert.assertEquals(240, PagaNico.pagaNico(860));
+	}
+	
+
 
 }
