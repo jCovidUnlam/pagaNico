@@ -3,10 +3,17 @@ package src;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class PagaNicoTest {
-	PagaNico pizza = new PagaNico();
+	PagaNico pizza;
+	
+	@Before
+	public void setUp() {
+		pizza = new PagaNico();
+	}
+	
 	@Test
 	public void testEjemplo1() {
 		Assert.assertEquals(140, pizza.pagaNico(140));
@@ -115,5 +122,10 @@ public class PagaNicoTest {
 	@Test
 	public void testMas500Mayor200Mayor120() {
 		assertEquals(280, pizza.pagaNico(900));
+	}
+	
+	@Test
+	public void testRedondeoAFavorDeLucas() {
+		assertEquals(240, pizza.pagaNico(359));
 	}
 }
